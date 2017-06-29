@@ -1,0 +1,103 @@
+body 
+{
+	padding: 0;
+	background: url(../img/intro-bg.jpg) center center/cover no-repeat;
+	position: relative;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	min-height: 100vh;
+}
+
+.intro {
+	background-image: none;
+	background-color: transparent;
+}
+
+body::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.05);
+	z-index: -1;
+}
+
+.headingFont {
+	text-shadow: 1px 1px black
+;
+}
+
+.topBottomBar {
+	height: 100px;
+	margin-left: -15px;
+	margin-right: 0px;
+	background: #3d6794;
+}
+
+footer {
+	height: 25px;
+	background: grey;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 4;
+	margin: 0 -15px;
+	padding: 0;
+}
+
+.img-circle
+
+{
+	border: 10px;
+	border-style: solid;
+	border-color: white;
+}
+
+.headingColor {
+	color: black;
+	display: inline-block;
+	background-color: white;
+	width: 250px;
+	height: 63px;
+	opacity: .8;
+	border-radius: 25px;
+	}
+
+.navTitle
+
+{
+	size: 40px;
+}
+
+.bubbles
+{
+	padding-top: 120px;
+	margin: auto;
+}
+
+.aboutPage {
+	display: block center;
+	opacity: .9;
+	background-color: white;
+	color: black;
+	width: 80%;
+	border-radius: 10px;
+	margin: auto;
+	padding: 31px;
+}
+
+.aboutText {
+	padding-top: 10px;
+	font-size: 55px;
+	text-shadow: 1px 1px black
+}
+
+.textInAbout {
+	font-size: 26px;
+	font-family: 'Josefin Sans', sans-serif;
+}
