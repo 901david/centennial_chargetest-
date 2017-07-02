@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Centennial Charge - 7 Types of Drivers that Should Stay Off Colorado Roads</title>
+    <title>Centennial Charge - Beaches You Can't Visit in Colorado</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,23 +21,32 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link href="css/grayscale.min.css" rel="stylesheet">
     <link href="css/business-frontpage.css" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+    
 
     <!-- Theme CSS -->
     <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script> var pageValue = "traffic";</script>
+    <script rel="javascript" type="text/javascript" src="js/npr.js"></script>
+    <script rel="javascript" type="text/javascript" src="js/comment.js"></script>
+
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <![endif]-->
 
-</head>
+    </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-  <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+       <!-- Navigation -->
+       <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
@@ -45,59 +54,106 @@
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
                   <p class="navTitle"><a href="index.html">CENTENNIAL CHARGE</a> 
-                </a>
-            </div>
+                  </a>
+              </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="index.html">Home</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="about.html">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="index.html">Home</a>
+                        <a class="page-scroll" href="contact.html">Contact</a>
                     </li>
+                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
+
+
         </div>
-        <!-- /.container -->
-    </nav>
+    </div>
+    <!-- /.container -->
+</nav>
+
 <div class="topBottomBar"></div>
 
-    <!-- Intro Header -->
-    <div class="container-fluid">
-       <header class="intro">
-            <!-- <p class="headingFont" style= "font-family: 'Hammersmith One', sans-serif; font-size: 91px; color: white">CENTENNIAL CHARGE <a href="index.html"><p>🏠</p></a></p> -->
-                <div class="row" id="trafficMap">
-                   
-                </div>
-                </header>
-                <footer></footer>
+<!-- Intro Header -->
+<div class="container-fluid">
+ <header class="intro">
+    <!-- <p class="headingFont" style= "font-family: 'Hammersmith One', sans-serif; font-size: 91px; color: white">CENTENNIAL CHARGE <a href="index.html"><p>🏠</p></a></p> -->
+    <div class="row">
+        <div class="col-md-10">
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.js"></script>
+            <h1 class="aboutText">Where To Be In The Worst Traffic In Colorado</h1>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+            <div class="articleBox">
+                <p>Traffic in Colorado is at an all-time high! With this phenomena of more people moving to Colorado than the Centennial State can hold, you may be asking yourself: where can I go to see the most traffic at all hours of the day? That's where we here at Centennial Charge are here to get you where you need to be.</p>
+                <h1>6th Ave to I-25 Exit</h1>
+                <p>The first on our list is a place that will give you the most standstill traffic for a Colorado exit. If people watching and sudden stops are your favorite, then look no further than the eastern path to Denver from cities like Golden, Morrison, and Lakewood. Bonus: merging from three lanes to one is never a sinch, so you may even get cut off 5 times in a row during rush hour! Make sure to drive over here at the 4 o'clock hour to get the full experience.</p>
+                <h1>Peña Boulevard</h1>
+                <p>Peña Boulevard comes in on second on our list for its wonderful length and out-of-the-way nature. As if it wasn't already fun going to an airport located totally outside of Denver city outskirts, then just wait until you hit this long stretch of country road at morning rush hour.</p> 
+                <h1>Centennial Area C-470</h1>
+                <p>The last on our lsit of the best places to find the busiest traffic in Colorado is the city of Centennia's stretch of C-470. Morning, noon, or night, this road is backed up with accidents galore for your rubbernecking pleasure. For an extra fun time, try going only 10 miles <em>above</em> the speed limit to see how many times you can get tailgated in the right lane!</p>
+            </div>
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-     
+        </div>
+        <div class="col-md-2">
+            <div class="mapBox">Map <br>
+                <img src="http://via.placeholder.com/300x300"></div>
+            </div>
+        </div>
 
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA"></script>
+    </header>
+    <div id="newsHolder" class="col-lg-9 col-offset-2">
+    
+    <img id="leftButt" class="col-xs-1 col-sm-1 sol-md-1 col-lg-1 img-responsive" src="img/leftarrow.png">
+    
+    <div id="testArea" class="center-block">
+    </div>
+    
+    <img id="rightButt" class="col-xs-1 col-sm-1 sol-md-1 col-lg-1 img-responsive" src="img/rightarrow.png">
+    
+    
+    </div>
+    <div id="commentBox">
+        <div class="col-lg-8 col-lg-offset-2" id="buttonSection">
+            <h1>Comments:</h1>
+            <input type="text" id="nameInput" placeholder="Enter name">
+            <input type="text" id="commentInput" placeholder="Enter Comment">
+            <button id="commentSubmission" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="col-lg-10 col-lg-offset-1" id="commentSection">
 
+        </div>
+    </div>
+    <footer></footer>
+</div>
 
-    <!--  traffic.js -->
-    <script type="text/javascript" src="mapJS/traffic.js"></script>
-    <!-- Theme JavaScript -->
-    <script src="js/grayscale.min.js"></script>
+<!-- jQuery -->
+<script src="vendor/jquery/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+<!-- Theme JavaScript -->
+<script src="js/grayscale.min.js"></script>
+
 
 </body>
 

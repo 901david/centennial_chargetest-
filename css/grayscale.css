@@ -124,12 +124,17 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: white;
+<<<<<<< HEAD
+  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+/*  background-size: cover;
+=======
   background: url(../img/intro-bg.jpg) no-repeat bottom center cover scroll;
+>>>>>>> c00e7b08fee84a09f5b850ea5ae87f39e07fe2d9
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;
+  -o-background-size: cover;*/
 }
 .intro .intro-body {
   display: table-cell;
