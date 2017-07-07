@@ -1,21 +1,11 @@
 
 
- initMap()
-     
-        var trafficElement= $("#traffic")
-        traffic.on('click', function(event) {
-          traffic();
-        });
-
-        function trafficDisplay() {
-       var map = new google.maps.Map(document.getElementById('map'), {
+ function initMap() {
+        var map = new google.maps.Map(document.getElementById("mapBox"), {
           zoom: 13,
-          center: {lat: 39.7420, lng: -104.9}
+          center: {lat: 39.742043, lng: -104.991531}
         });
 
         var trafficLayer = new google.maps.TrafficLayer();
         trafficLayer.setMap(map);
       }
-    
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoHyB5pTrRekau2_Kb9aOlYIwjLwXkOBY&callback=initMap">
-   
